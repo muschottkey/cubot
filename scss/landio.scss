@@ -75,7 +75,7 @@
 // @import "bootstrap/close";
 
 // Components w/ JavaScript
-// @import 'bootstrap/modal';
+//@import 'bootstrap/modal';
 // @import "bootstrap/tooltip";
 // @import "bootstrap/popover";
 @import 'bootstrap/carousel';
@@ -196,6 +196,7 @@ body,p{
     z-index: 999;
   }
 
+.medium{ font-weight:400 !important;}
 @include media-breakpoint-down(sm) {
   .p-y-lg {
     padding-top: ($spacer-y * .5) !important;
@@ -246,7 +247,14 @@ body,p{
     display: block;
 }
 .text-left{text-align: left;}
+.capitalize{text-transform: capitalize;}
 
+.bg-gradient{
+background: #00bf8f; /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #00bf8f , #001510); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #00bf8f , #001510); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+}
 //
 // =Navbar
 // --------------------------------------------------
@@ -919,7 +927,14 @@ h2 {
   }
 }
 .input-group-btn .btn{
-  padding: 0.9rem 1rem;
+  padding: 0.95rem 1rem;
+}
+.header_search{
+  border: 0px solid #fff;
+  background-color: #e0e0e0;
+}
+.header_search:focus{
+  border:1px solid #ccc;
 }
 .bg-inverse .btn-secondary-outline {
   &:focus,

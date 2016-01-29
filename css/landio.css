@@ -6210,6 +6210,9 @@ body, p {
   width: 100%;
   z-index: 999; }
 
+.medium {
+  font-weight: 400 !important; }
+
 @media (max-width: 767px) {
   .p-y-lg {
     padding-top: 0.5rem !important;
@@ -6320,6 +6323,17 @@ body, p {
 
 .text-left {
   text-align: left; }
+
+.capitalize {
+  text-transform: capitalize; }
+
+.bg-gradient {
+  background: #00bf8f;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #00bf8f, #001510);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #00bf8f, #001510);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 .navbar-toggler {
   padding: 0;
@@ -6804,7 +6818,14 @@ h2 {
     vertical-align: -20%; }
 
 .input-group-btn .btn {
-  padding: 0.9rem 1rem; }
+  padding: 0.95rem 1rem; }
+
+.header_search {
+  border: 0px solid #fff;
+  background-color: #e0e0e0; }
+
+.header_search:focus {
+  border: 1px solid #ccc; }
 
 .bg-inverse .btn-secondary-outline:focus, .bg-inverse .btn-secondary-outline:hover {
   background-color: rgba(255, 255, 255, 0.5);
