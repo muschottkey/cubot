@@ -159,7 +159,8 @@ $font-family-sans-serif-custom: 'Roboto Condensed', sans-serif !default;
   color: #fff;
 }
 .relative{position: relative;}
-.ov-hidden{overflow: hidden;}
+.ov-hidden{overflow: hidden !important;max-width: 100%;}
+.ov-x-hidden{overflow-x: hidden !important;max-width: 100%;}
 body,p{
   font-weight: 300;
 }
@@ -221,6 +222,13 @@ body,p{
   $var: $i * 10;
   .pt#{$var}{
      @include setpadding('top',$var);
+  }
+}
+
+@for $i from 1 through 10 {
+  $var: $i * 10;
+  .pb#{$var}{
+     @include setpadding('bottom',$var);
   }
 }
 
@@ -2027,6 +2035,7 @@ $linkedin: #0077b5;
   -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-size: cover;
 }
 
 .specs{
@@ -2178,6 +2187,7 @@ $linkedin: #0077b5;
   top:50px;
   transform:rotate(11deg);
   background-color: #CDDC39;
+  z-index: -1;
 }
 .with-pretty-bars:after{
   content: "";
@@ -2188,6 +2198,7 @@ $linkedin: #0077b5;
   bottom:50px;
   z-index: -1;
   transform:rotate(-11deg);
+  z-index: -1;
   background-color: #FFEB3B;
 }
 #battery:after{}
