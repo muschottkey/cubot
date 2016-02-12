@@ -158,6 +158,9 @@ $font-family-sans-serif-custom: 'Roboto Condensed', sans-serif !default;
   background-color: #0E0E0E;
   color: #fff;
 }
+.strikethrough{
+  text-decoration: line-through;
+}
 .relative{position: relative;}
 .ov-hidden{overflow: hidden !important;max-width: 100%;}
 .ov-x-hidden{overflow-x: hidden !important;max-width: 100%;}
@@ -244,6 +247,10 @@ body,p{
   .mb#{$var}{
      @include setmargin('bottom',$var);
   }
+}
+
+@include media-breakpoint-up(xs){
+  .p0-xs-up{padding: 0 !important;}
 }
 
 .text-underlined:after{
@@ -744,7 +751,7 @@ $custom-min-height: 37.5em; // 600
 // slider
 
 .carousel-header{
-  height: 80%;
+  height: 95%;
 }
 
 .carousel-inner,
@@ -846,7 +853,7 @@ $custom-min-height: 37.5em; // 600
   @media (min-width: $custom-min-width) and (min-height: $custom-min-height) {
     display: table;
     width: 100%;
-    height: calc(100% - 50px);
+    height: calc(100% - 200px);
     padding: 0;
 
     > div {
@@ -913,6 +920,9 @@ h2 {
     font-weight: 500;
   }
 }
+.em{
+    font-weight: 500;
+  }
 
 .btn {
   padding: $btn-padding-y ($btn-padding-x - 2.25rem) ($btn-padding-y - .1rem);
@@ -944,6 +954,17 @@ h2 {
 .header_search:focus{
   border:1px solid #ccc;
 }
+.btn-inverse{
+  color: #fff;
+  background-color: #838383;
+  border-color: #838383;
+}
+.btn-orange{
+  color: #fff;
+  background-color: #F7931D;
+  border-color: #F7931D;
+}
+
 .bg-inverse .btn-secondary-outline {
   &:focus,
   &:hover {
@@ -2040,6 +2061,9 @@ $linkedin: #0077b5;
 
 .specs{
   text-align: center;
+  @include media-breakpoint-down(md){
+    min-height: 175px;
+  }
 }
 .badge-icon {
     height: 72px;
@@ -2202,3 +2226,5 @@ $linkedin: #0077b5;
   background-color: #FFEB3B;
 }
 #battery:after{}
+.bolder{font-weight: 900;}
+.fs-4{font-size: 4em;}

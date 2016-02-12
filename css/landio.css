@@ -6159,6 +6159,9 @@ Copyright (c) 2015 Daniel Eden
   background-color: #0E0E0E;
   color: #fff; }
 
+.strikethrough {
+  text-decoration: line-through; }
+
 .relative {
   position: relative; }
 
@@ -6347,6 +6350,9 @@ body, p {
 
 .mb100 {
   margin-bottom: 100px; }
+
+.p0-xs-up {
+  padding: 0 !important; }
 
 .text-underlined:after {
   content: '';
@@ -6715,7 +6721,7 @@ body {
     opacity: 1; }
 
 .carousel-header {
-  height: 80%; }
+  height: 95%; }
 
 .carousel-inner,
 .carousel-item {
@@ -6788,7 +6794,7 @@ body {
   .center-vertically {
     display: table;
     width: 100%;
-    height: calc(100% - 50px);
+    height: calc(100% - 200px);
     padding: 0; }
     .center-vertically > div {
       display: table-cell;
@@ -6835,6 +6841,9 @@ h2 {
   h2 em {
     font-weight: 500; }
 
+.em {
+  font-weight: 500; }
+
 .btn {
   padding: 1.4rem 2.125rem 1.3rem;
   font-size: .8125rem;
@@ -6861,6 +6870,16 @@ h2 {
 
 .header_search:focus {
   border: 1px solid #ccc; }
+
+.btn-inverse {
+  color: #fff;
+  background-color: #838383;
+  border-color: #838383; }
+
+.btn-orange {
+  color: #fff;
+  background-color: #F7931D;
+  border-color: #F7931D; }
 
 .bg-inverse .btn-secondary-outline:focus, .bg-inverse .btn-secondary-outline:hover {
   background-color: rgba(255, 255, 255, 0.5);
@@ -7627,6 +7646,9 @@ figure {
 
 .specs {
   text-align: center; }
+  @media (max-width: 991px) {
+    .specs {
+      min-height: 175px; } }
 
 .badge-icon {
   height: 72px;
@@ -7789,3 +7811,9 @@ figure {
   transform: rotate(-11deg);
   z-index: -1;
   background-color: #FFEB3B; }
+
+.bolder {
+  font-weight: 900; }
+
+.fs-4 {
+  font-size: 4em; }
